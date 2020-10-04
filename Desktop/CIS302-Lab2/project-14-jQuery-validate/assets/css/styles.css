@@ -1,3 +1,108 @@
+/* Implementing a fluid grid */
+.row {
+	padding: 0.5em;
+}
+.breakpoint-480 .cell,.breakpoint-640 .cell,.breakpoint-768 .cell,.no-breakpoint .cell {
+	float: left;
+	padding: 0.5em;
+}
+.one-column {
+	width: 8.333%;
+}
+.two-column {
+	width: 16.666%;
+}
+.three-column {
+	width: 24.999%;
+}
+.four-column {
+	width: 33.332%;
+}
+.five-column {
+	width: 41.665%;
+}
+.six-column {
+	width: 49.998%;
+}
+.seven-column {
+	width: 58.331%;
+}
+.eight-column {
+	width: 66.664%;
+}
+.nine-column {
+	width: 74.997%;
+}
+.ten-column {
+	width: 83.33%;
+}
+.eleven-column {
+	width: 91.663%;
+}
+.twelve-column {
+	width: 100%;
+	float: left;
+}
+.right {
+	float: right;
+}
+.row.nested {
+	padding: 0;
+	margin-right: -0.5em;
+}
+/* Media queries to define breakpoints */
+@media only screen and (max-width: 768px) {
+	.breakpoint-768 .cell {
+		float: none;
+		width: 100%;
+		padding-bottom: 0.5em;
+	}
+}
+@media only screen and (max-width: 640px) {
+	.breakpoint-640 .cell {
+		float: none;
+		width: 100%;
+		padding-bottom: 0.5em;
+	}
+	header {
+		margin-top: 1em;
+	}
+	#login {
+		top: 1em;
+	}
+	#logo.four-column {
+		width: 40%;
+	}
+	nav {
+		width: 100%;
+		margin-top: 0.8em;
+	}
+	nav ul li {
+		width: 24.5%;
+		margin-left: 0.5%;
+	}
+	nav li a {
+		text-align: center;
+		font-size: 0.6em;
+	}
+	#login-link-text {
+		display: none;
+	}
+	a#login-submit {
+		padding: 0.2em 0.5em
+	}
+	#login input {
+		width: 9em;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.breakpoint-480 .cell {
+		float: none;
+		width: 100%;
+		padding-bottom: 0.5em;
+	}
+}
+
 * {
 	margin: 0;
 	padding: 0;
