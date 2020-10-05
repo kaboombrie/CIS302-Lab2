@@ -196,7 +196,7 @@ ul li, ol li {
 .row:after, .clearfix:after {
 	clear: both;
 }
-}
+
 /* Links */
 body {
 	font: .81em/150% "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
