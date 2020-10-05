@@ -11,7 +11,7 @@
 		<div id="main-container">
 			<header class ="row breakpoint-640">
 				<h1 id="logo" class="four-column cell">Save The Child</h1>
-				<nav id="top-nav" class="row breakpoint-640">
+				<nav id="top-nav">
 					<ul>
 						<li id="login">
 							<div id="authorized" class="eight-column cell">
@@ -32,7 +32,7 @@
 
 							
 						</li>
-						<li id="top-menu-items" class="four-column cell">
+						<li id="top-menu-items" class="eight-column cell">
 							<ul>
 								<li>
 									<a href="javascript:void(0)">Who We Are</a>
@@ -52,8 +52,8 @@
 				</nav>
 			</header>
 			<div id="main" role="main">
-				<section id="main-top-section">
-					<div id="donation-address">
+				<section id="main-top-section" class="row breakpoint-480">
+					<div id="donation-address" class="seven-column cell">
 						<p class="donation-address">
 							Lorem ipsum dolor sit amet, consectetur e magna aliqua.
 							Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -76,7 +76,10 @@
 							<input type="hidden" name="business" value="email-registered-in-paypal@site-url.com">
 							<input type="hidden" name="item_name" value="Donation">
 							<input type="hidden" name="currency_code" value="USD">
-							<div class="donation-form-section">
+							<div class="row nested breakpoint-960">
+								<div class="six-column cell">
+									<div class="row nested">
+							<div class="donation-form-section" class="five-column left">
 								<label class="donation-heading">Please select or enter
 									<br/>
 									donation amount</label>
@@ -97,7 +100,7 @@
 								<label class="donation-heading">Other amount</label>
 								<input id="customAmount" name="amount" value="" type="text" autocomplete="off" />
 							</div>
-							<div class="donation-form-section">
+							<div class="donation-form-section" class="five-column left">
 								<label class="donation-heading">Donor information</label>
 								<input type="text" id="full_name" name="full_name" placeholder="full name *" required>
 								<input type="email" id="email_addr" name="email_addr" placeholder="email *" required>
@@ -420,7 +423,7 @@
 						</form>
 					</div>
 				</section>
-				<section id="main-bottom-section">
+				<section id="main-bottom-section" class="row breakpoint-768">
 					Main content. Bottom section.
 				</section>
 			</div>
